@@ -7,13 +7,19 @@
 </head>
 <body>
     <div id="root">
+        <!--add js first-->
         <script>
+
+            /* we use the document api to add our H1 tag IN JS and access it with our const variable */
+             /*createElement is a document api used to create HTML tags in JS*/
             const heading = document.createElement("h1");
             const text = document.createElement("p");
 
+            /*To put "Our text inside the heading" we call our variable and use innerHTML to add text in it*/
             heading.innerHTML= "Hello World from JS";
             text.innerHTML= "This is a paragraph using JS";
 
+            /*i get the root div with my document api, and use append to add my heading text into my div root*/
             document.querySelector("#root").append(heading, text);
         </script>
     </div>
